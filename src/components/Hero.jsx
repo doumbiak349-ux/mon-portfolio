@@ -11,7 +11,7 @@ const DESCRIPTION =
 const PHOTO = '/ma-photo.png'
 
 // Nom EXACT de ton CV, placé dans le dossier public
-const CV = '/CV DOUMBIA KARAMOKO.pdf'
+const CV = '/CV.pdf'
 // ==============================
 
 export default function Hero() {
@@ -36,7 +36,7 @@ export default function Hero() {
             <a href="#projects" className="hero-btn hero-btn-light">
               Voir mes projets
             </a>
-            <a href={CV} download className="hero-btn hero-btn-outline">
+            <a href={CV} download="CV-Karamoko-Doumbia.pdf" className="hero-btn hero-btn-outline">
               Télécharger mon CV
             </a>
           </div>

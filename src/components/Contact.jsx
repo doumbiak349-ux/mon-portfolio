@@ -10,7 +10,7 @@ import './Contact.css'
 
 // ====== À PERSONNALISER ======
 const EMAIL = 'doumbiak349@gmail.com'
-const PHONE = '' // Ex : '+225 07 87 96 15 67'
+const PHONE = '+225 07 87 96 15 67' // Laisse '' pour ne pas l'afficher
 const LOCATION = "Abidjan, Côte d'Ivoire"
 const GITHUB = 'https://github.com/doumbiak349-ux/'
 const LINKEDIN = 'https://www.linkedin.com/in/karamoko-doumbia-1737b9386/'
@@ -69,7 +69,7 @@ export default function Contact() {
           <h2 className="section-title">Contact</h2>
 
           <p className="contact-intro">
-          +225 07 87 96 15 67
+            Une idée ou un projet ? N'hésite pas à me contacter !
           </p>
 
           <ul className="contact-details">
