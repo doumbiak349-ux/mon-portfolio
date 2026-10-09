@@ -1,25 +1,19 @@
 /* ===== Palette et variables (modifie les couleurs ici) ===== */
 :root {
   --color-primary: #7a0524;
-  --color-primary-dark: #4a0016;
-  --color-primary-light: #f6e6e9;
-  --color-accent: #c9a04a;
+    --color-primary: #1e3a8a;
+  --color-primary-dark: #0f1f4d;
+  --color-primary-light: #e6ecfb;
+  --color-accent: #f0b429;
 
-  --hero-gradient: linear-gradient(115deg, #3d0012 0%, #7a0524 45%, #a8304e 75%, #c9a04a 100%);
-  --navbar-bg: rgba(240, 229, 228, 0.92);
+  --hero-gradient: linear-gradient(115deg, #0a1433 0%, #1e3a8a 45%, #3b6fd4 75%, #f0b429 100%);
+  --navbar-bg: rgba(230, 236, 251, 0.92);
 
-  --color-bg: #faf6f3;
-  --color-bg-alt: #f3ebe7;
-  --color-text: #2b2024;
-  --color-text-muted: #6e5f64;
-  --color-border: #e8dcd8;
-
-  --font-main: 'Inter', 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
-  --font-title: 'Playfair Display', Georgia, serif;
-
-  --radius: 10px;
-  --navbar-height: 76px;
-  --transition: 0.25s ease;
+  --color-bg: #f7f9fd;
+  --color-bg-alt: #eaf0fb;
+  --color-text: #1b2233;
+  --color-text-muted: #5b6578;
+  --color-border: #dbe3f3;
 }
 
 /* ===== Reset ===== */
