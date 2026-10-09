@@ -1,0 +1,134 @@
+.about {
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ===== Texte ===== */
+.about-paragraph {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-paragraph + .about-paragraph {
+  margin-top: 1rem;
+}
+
+/* ===== 3 points forts ===== */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.about-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.about-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.about-feature-title {
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.3rem;
+}
+
+.about-feature-text {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== Image unique ===== */
+.about-images {
+  position: relative;
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+/* Cadre doré décalé derrière l'image */
+.about-images::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  bottom: 0;
+  left: 1.5rem;
+  border: 3px solid var(--color-accent);
+  border-radius: 24px;
+}
+
+.about-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3.4;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: var(--color-bg-alt);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Bloc affiché si l'image est introuvable */
+.about-image-fallback {
+  background: var(--hero-gradient);
+}
+
+/* ===== Tablette (≤ 992px) ===== */
+@media (max-width: 992px) {
+  .about-grid {
+    gap: 3rem;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about-feature {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-feature-icon {
+    flex-shrink: 0;
+  }
+}
+
+/* ===== Mobile (≤ 768px) : une colonne, image sous le texte ===== */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-images {
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+  }
+}
